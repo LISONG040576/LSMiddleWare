@@ -18,9 +18,8 @@ Pod::Spec.new do |s|
   
   s.source       = { :git => "https://github.com/LISONG040576/LSMiddleWare.git", :tag => s.version.to_s }
 
-  s.source_files  = "LSMiddleWare"
+  s.source_files  = "LSMiddleWare","LSMiddleWare/*","LSMiddleWare/**/*.{h,m}","LSMiddleWare/**/LSRouter/*.{h,m}","LSMiddleWare/**/LSModule/*.{h,m}"
 
-  #s.resources = '上移动画/*.{jpg,png}'
 
   s.requires_arc = true
 
@@ -31,7 +30,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '6.0'
 
 
-  #s.dependency "SJRouter"
+
 
 
 

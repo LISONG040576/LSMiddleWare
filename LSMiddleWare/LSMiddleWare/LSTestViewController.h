@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LSRouter/LSRouter.h"
-#import "LSRouter/LSRouteHandler.h"
+#import "LSRouter.h"
+#import "LSRouteHandler.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

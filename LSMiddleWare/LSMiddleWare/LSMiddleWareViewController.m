@@ -7,7 +7,7 @@
 //
 
 #import "LSMiddleWareViewController.h"
-#import "LSRouter/LSRouter.h"
+#import "LSRouter.h"
 
 @interface LSMiddleWareViewController ()
 
