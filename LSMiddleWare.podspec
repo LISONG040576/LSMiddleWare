@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   
   s.name         = "LSMiddleWare"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "LSMiddleWare."
 
   
@@ -18,7 +18,19 @@ Pod::Spec.new do |s|
   
   s.source       = { :git => "https://github.com/LISONG040576/LSMiddleWare.git", :tag => s.version.to_s }
 
-  s.source_files  = "LSMiddleWare","LSMiddleWare/*","LSMiddleWare/**/*.{h,m}","LSMiddleWare/**/LSRouter/*.{h,m}","LSMiddleWare/**/LSModule/*.{h,m}"
+#  s.source_files  = "LSMiddleWare","LSMiddleWare/*","LSMiddleWare/**/*.{h,m}","LSMiddleWare/**/**/*.{h,m}"
+
+  s.subspec 'LSModule' do |s1|
+	
+	s1.source_files = "LSMiddleWare/**/LSModule/*.{h,m}"
+
+  end
+
+  s.subspec 'LSRouter' do |s2|
+	
+	s2.source_files = "LSMiddleWare/**/LSRouter/*.{h,m}"
+
+  end
 
 
   s.requires_arc = true
