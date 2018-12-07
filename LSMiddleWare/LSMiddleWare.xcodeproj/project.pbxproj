@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		095B79C33EE65870FB320616 /* libPods-LSMiddleWare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEA0D50C37C61F520BB59033 /* libPods-LSMiddleWare.a */; };
+		F571ACB421BA3F12009DCE2C /* LSMiddleWare.podspec in Resources */ = {isa = PBXBuildFile; fileRef = F571ACB321BA3F12009DCE2C /* LSMiddleWare.podspec */; };
 		F59D6A8821AF8A6C00ABFE77 /* LSMiddleWareAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F59D6A8721AF8A6C00ABFE77 /* LSMiddleWareAppDelegate.m */; };
 		F59D6A8B21AF8A6C00ABFE77 /* LSMiddleWareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F59D6A8A21AF8A6C00ABFE77 /* LSMiddleWareViewController.m */; };
 		F59D6A9021AF8A6D00ABFE77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F59D6A8F21AF8A6D00ABFE77 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 		40B72331B6DD1B45A93EC8A9 /* Pods-LSMiddleWare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSMiddleWare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LSMiddleWare/Pods-LSMiddleWare.debug.xcconfig"; sourceTree = "<group>"; };
 		83864E38AE051D791E4C1F93 /* Pods-LSMiddleWare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSMiddleWare.release.xcconfig"; path = "Pods/Target Support Files/Pods-LSMiddleWare/Pods-LSMiddleWare.release.xcconfig"; sourceTree = "<group>"; };
 		EEA0D50C37C61F520BB59033 /* libPods-LSMiddleWare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LSMiddleWare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F571ACB321BA3F12009DCE2C /* LSMiddleWare.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LSMiddleWare.podspec; path = ../LSMiddleWare.podspec; sourceTree = "<group>"; };
 		F59D6A8321AF8A6C00ABFE77 /* LSMiddleWare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSMiddleWare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F59D6A8621AF8A6C00ABFE77 /* LSMiddleWareAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSMiddleWareAppDelegate.h; sourceTree = "<group>"; };
 		F59D6A8721AF8A6C00ABFE77 /* LSMiddleWareAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSMiddleWareAppDelegate.m; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 		F59D6A7A21AF8A6C00ABFE77 = {
 			isa = PBXGroup;
 			children = (
+				F571ACB321BA3F12009DCE2C /* LSMiddleWare.podspec */,
 				F59D6A8521AF8A6C00ABFE77 /* LSMiddleWare */,
 				F59D6A8421AF8A6C00ABFE77 /* Products */,
 				9204DA8DD3CB7AAEBB074EAF /* Pods */,
@@ -192,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F59D6A9321AF8A6D00ABFE77 /* LaunchScreen.storyboard in Resources */,
+				F571ACB421BA3F12009DCE2C /* LSMiddleWare.podspec in Resources */,
 				F59D6A9021AF8A6D00ABFE77 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

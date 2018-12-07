@@ -21,9 +21,9 @@
 /**
  向子模块传递配置信息（第三方的ID，key等信息）
  
- @param fileName 文件名称
+ @param configDic 数据字典
  */
-- (void)sendVendorsConfigInfoToModulesWithFileName:(NSString *)fileName;
+- (void)sendVendorsConfigInfoToModulesWithConfigDic:(NSDictionary *)configDic;
 
 /**
  如果有需要，传递数据数据对象
