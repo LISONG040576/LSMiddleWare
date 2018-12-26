@@ -19,10 +19,29 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LSModuleManager : NSObject
 
+
+
+/**
+ 单例
+
+ @return 返回对象
+ */
 + (instancetype)sharedInstance;
 
+
+/**
+ 注册所有组件Moudle类
+
+ @param plistFile 主工程当中的Moudle配置文件
+ */
 - (void)loadModulesWithPlistFile:(NSString *)plistFile;
 
+
+/**
+ 所有注册过的Module类
+
+ @return 返回Module列表
+ */
 - (NSArray<id<LSModuleProcol>> *)allModules;
 
 @end

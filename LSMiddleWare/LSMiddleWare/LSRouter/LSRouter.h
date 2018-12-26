@@ -16,12 +16,38 @@ typedef void(^LSRouterUnhandledCallback)(LSRouterRequest *request, UIViewControl
 
 @interface LSRouter : NSObject
 
+
+/**
+ 请求无法处理时定义的事件
+ */
+@property (nonatomic, copy, nullable) LSRouterUnhandledCallback unhandledCallback;
+
+
+/**
+ 单利
+
+ @return 返回对象
+ */
 + (instancetype)shared;
 
-- (void)handleRequest:(LSRouterRequest *)request completionHandler:(nullable LSCompletionHandler)completionHandler;
 
-@property (nonatomic, copy, nullable) LSRouterUnhandledCallback unhandledCallback;
-- (BOOL)canHandleRoutePath:(NSString *)routePath; // 是否可以处理某个路径
+/**
+ 处理路由请求（比如界面跳转）
+
+ @param request 创建带有请求信息的类
+ @param completionHandler 回调方法
+ */
+- (void)handleRequest:(LSRouterRequest *)request
+    completionHandler:(nullable LSCompletionHandler)completionHandler;
+
+
+/**
+ 判断能否处理否个请求的路径
+
+ @param routePath 路径
+ @return 返回布尔
+ */
+- (BOOL)canHandleRoutePath:(NSString *)routePath; 
 
 @end
 
